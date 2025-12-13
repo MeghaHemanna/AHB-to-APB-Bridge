@@ -64,7 +64,7 @@ task burst_incr4_write();
             hwrite=1;
             htrans=2'd2;
             hsize=0;
-            hburst=0;
+            hburst=3;
             hreadyin=1;
             haddr=32'h8400_0000;
          end
@@ -105,7 +105,7 @@ task burst_incr4_read();
             hwrite=0;
             htrans=2'd2;
             hsize=0;
-            hburst=0;
+            hburst=3;
             hreadyin=1;
             haddr=32'h8400_0000;
          end
